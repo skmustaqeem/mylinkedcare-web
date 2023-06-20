@@ -18,9 +18,8 @@ const ProtectedRoute = ({ router, children, pathname }) => {
 
   let unprotectedRoutes = [
     Constants.UNPROTECTED_ROUTES.LOGIN,
-    Constants.UNPROTECTED_ROUTES.REGISTER_CLINIC,
-    Constants.UNPROTECTED_ROUTES.REGISTER_DOCTOR,
     Constants.UNPROTECTED_ROUTES.REGISTER,
+    Constants.UNPROTECTED_ROUTES.REGISTER_PATIENT,
     Constants.UNPROTECTED_ROUTES.FORGOT_PASSWORD,
   ]
 

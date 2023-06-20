@@ -7,7 +7,6 @@ import { Tab } from '@headlessui/react';
 import LandingAppointmentTab from "./tabs/LandingAppointmentTab";
 import LandingAvailabilityTab from "./tabs/LandingAvailabilityTab";
 import LandingCalenderTab from "./tabs/LandingCalenderTab";
-import SetAppointments from "./modals/SetAppointments";
 import ApiCall from "@/utils/Apicall";
 import Constants from "@/utils/Constants";
 import _ from "lodash";
@@ -15,16 +14,6 @@ import { getCookie } from "@/utils/Helpers";
 import moment from "moment";
 
 function LandingScreen() {
-
-  useEffect(() => {
-    const use = async () => {
-      const { Datepicker, Input, initTE, Tab, Dropdown, Modal, Ripple
-      } = await import('tw-elements');
-      initTE({ Datepicker, Input, Tab, Dropdown, Modal, Ripple });
-    };
-    use();
-  }, []);
-
 
   const [appointmentData, setAppointmentData] = useState();
   const [availibilitiesData, setAvailibilitiesData] = useState();

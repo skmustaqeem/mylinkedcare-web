@@ -5,10 +5,8 @@ import { Dialog, Transition } from '@headlessui/react'
 import {
     Bars3Icon,
     XMarkIcon,
-    CalendarIcon,
     ChartPieIcon,
     DocumentDuplicateIcon,
-    FolderIcon,
     HomeIcon,
     UsersIcon,
     ArrowsPointingOutIcon
@@ -18,7 +16,7 @@ import { CLEAR_STORAGE, eraseCookie } from '@/utils/Helpers'
 import { useRouter } from 'next/navigation'
 
 const navigation = [
-    { name: 'Dashboard', href: '/landingScreen', icon: HomeIcon, },
+    { name: 'Dashboard', href: '/', icon: HomeIcon, },
     { name: 'Patient', href: '/patient', icon: UsersIcon, },
     { name: 'Profile', href: '/profile', icon: DocumentDuplicateIcon, },
     { name: 'Setting', href: '/setting/security', icon: ChartPieIcon, },

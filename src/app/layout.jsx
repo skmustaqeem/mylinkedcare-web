@@ -30,7 +30,8 @@ export default function RootLayout({ children }) {
 
           <ProtectedRoute router={router} pathname={pathname}>
             {
-              pathname === "/login" || pathname === "/register" ?
+
+              ["/login", "/register", "/forgot-password", "/register/patient"].includes(pathname) ?
                 children :
                 <Sidebar path={pathname}>
                   {children}

@@ -19,9 +19,6 @@ const ApiCall = async ({
         },
         body: JSON.stringify(body),
     })
-    // .then(res => res.json())
-    // .catch(err => err)
-    // .finally(() => { })
 
     if (res.ok && res.status === 200) {
         return await res.json();

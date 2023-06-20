@@ -94,7 +94,7 @@ function ForgotPasswordForm() {
         withToken: false
       })
 
-      if (res && res.success && res?.user_id != null) { // if user exists in server
+      if (res && res.success && res.user_id != null) { // if user exists in server
         setUserData(res);
         setVarifyOtpFlag(true);
 
@@ -171,8 +171,9 @@ function ForgotPasswordForm() {
                         </div>
                       </div>
                     </div>
+                    <div id='send-otp-button'></div>
                     {!sendOtp && <div className="text-right">
-                      <button type='button' id='send-otp-button' className="btn-primary btn w-28" onClick={handleSendOtp} >
+                      <button type='button' className="btn-primary btn w-28" onClick={handleSendOtp} >
                         Send OTP
                       </button>
                     </div>}
