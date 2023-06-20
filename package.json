@@ -1,0 +1,43 @@
+{
+  "name": "mylinkedcare",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.8",
+    "@fullcalendar/daygrid": "^6.1.8",
+    "@fullcalendar/interaction": "^6.1.8",
+    "@fullcalendar/list": "^6.1.8",
+    "@fullcalendar/react": "^6.1.8",
+    "@fullcalendar/timegrid": "^6.1.8",
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.18",
+    "autoprefixer": "10.4.14",
+    "classnames": "^2.3.2",
+    "encoding": "^0.1.13",
+    "firebase": "^9.22.1",
+    "formik": "^2.2.9",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "next": "13.4.3",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^4.12.0",
+    "react-dom": "18.2.0",
+    "react-otp-input": "^3.0.2",
+    "react-paginate": "^8.2.0",
+    "react-select": "^5.7.3",
+    "react-table": "^7.8.0",
+    "react-toastify": "^9.1.3",
+    "remixicon": "^3.3.0",
+    "tailwindcss": "3.3.2",
+    "tw-elements": "^1.0.0-beta2",
+    "yup": "^1.2.0"
+  }
+}
