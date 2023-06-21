@@ -25,7 +25,7 @@ const ProtectedRoute = ({ router, children, pathname }) => {
 
   let pathIsProtected = unprotectedRoutes.indexOf(pathname) === -1;
 
-  if (isBrowser() && !isAuthenticated && pathIsProtected) {
+  if (isBrowser() && !isAuthenticated && pathIsProtected && false) {
     router.push(Constants.UNPROTECTED_ROUTES.LOGIN);
   }
 

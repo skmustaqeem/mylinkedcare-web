@@ -1,4 +1,4 @@
-import LandingScreen from '@/components/landingScreen'
+import Dashboard from '@/components/Dashboard'
 import HeaderLandingScreen from '@/components/shared/HeaderLandingScreen'
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
         {/* <PageTitle title="Dashboard" /> */}
       </section>
       <section className="container-lg m-5">
-        <LandingScreen />
+        <Dashboard />
       </section>
     </>
   )
